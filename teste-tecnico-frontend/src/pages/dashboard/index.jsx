@@ -55,7 +55,7 @@ function Dashboard() {
     formState: { errors },
   } = useForm({ resolver: yupResolver(schema) });
 
-  const calcular = ({ amount, installments, mdr, daysString, errors }) => {
+  const calculate = ({ amount, installments, mdr, daysString, errors }) => {
     let urlReq;
 
     switch (errors) {
@@ -114,7 +114,7 @@ function Dashboard() {
       <Box>
         <FormComp
           title="Simule sua antecipação:"
-          onSubmitFunction={handleSubmit(calcular)}
+          onSubmitFunction={handleSubmit(calculate)}
           inputSize="7vh"
         >
           <div>

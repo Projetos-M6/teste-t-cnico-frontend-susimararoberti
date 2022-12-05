@@ -5,7 +5,7 @@ import { StyledBox } from "./styles";
 function BoxHome() {
   const dashboard = useHistory();
 
-  const levarACalculadora = () => {
+  const goToCalc = () => {
     dashboard.push("/dashboard");
   };
 
@@ -14,7 +14,7 @@ function BoxHome() {
       <h1>Precisando antecipar suas transações?</h1>
       <div>
         <p>Descubra </p>
-        <span onClick={levarACalculadora}>AQUI!</span>
+        <span onClick={goToCalc}>AQUI!</span>
       </div>
     </StyledBox>
   );
